@@ -9,7 +9,11 @@ def run(kdf=0.0, win=0.2, N=3000, Mmin=2e-3, Mmax=1.0, jmode='seed', lam=0.035, 
     rng=np.random.default_rng(seed)
     M=np.geomspace(Mmin,Mmax,N)                    # mass labels (enclosed seed mass)
     dm=np.diff(np.concatenate([[0.0],M]))          # shell masses (innermost carries everything inside Mmin)
-    Rta=2*M; tta=np.pi*M
+    # The force on a shell uses the mass inside it plus half its own mass, M - dm/2 (see acc below).
+    # The initial cycloid must use the same mass, or the shell starts with the energy -1/2 + dm/(2r),
+    # which at the small starting radii is far from -1/2 (corrected 26 Oct 2026).
+    Mf=M-0.5*dm
+    Rta=2*Mf; tta=np.pi*Mf
     if jmode=='seed': j=np.sqrt(2)*lam*Rta         # j = sqrt2 lam v R_ta  (A2), v=1
     else: j=f*1.0*Rta/2                            # fraction f of circular at R_ta/2
     if spread>0: j=j*np.exp(spread*rng.standard_normal(N)-spread**2/2)
@@ -18,8 +22,8 @@ def run(kdf=0.0, win=0.2, N=3000, Mmin=2e-3, Mmax=1.0, jmode='seed', lam=0.035, 
     def eta_of(Mi,t):
         g=lambda e: Mi*(e-np.sin(e))-t
         return brentq(g,1e-9,2*np.pi-1e-9) if t<2*np.pi*Mi else 2*np.pi-1e-9
-    eta=np.array([eta_of(Mi,t) for Mi in M])
-    r=M*(1-np.cos(eta)); vr=np.sin(eta)/(1-np.cos(eta))   # dR/dt = v sin(eta)/(1-cos eta)
+    eta=np.array([eta_of(Mi,t) for Mi in Mf])
+    r=Mf*(1-np.cos(eta)); vr=np.sin(eta)/(1-np.cos(eta))   # dR/dt = v sin(eta)/(1-cos eta)
     L=np.where(t>=tta,j,0.0)
     if Tend is None: Tend=np.pi*Mmax*1.0
     snaps=sorted(snaps or [Tend]); out={}; si=0

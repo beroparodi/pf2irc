@@ -1,0 +1,18 @@
+b=0.0: max |u''+2u'+u-1| = 0.0e+00;  u(0)=0.0, u'(0)=1.0
+b=0.5: max |u''+2u'+u-1| = 4.4e-16;  u(0)=0.0, u'(0)=1.5
+b=1.0: max |u''+2u'+u-1| = 4.4e-16;  u(0)=0.0, u'(0)=2.0
+b=2.0: max |u''+2u'+u-1| = 8.9e-16;  u(0)=0.0, u'(0)=3.0
+c(0.0) numeric -1.500000   formula b^2/4+3b/2-3/2 = -1.500000
+c(0.5) numeric -0.687500   formula b^2/4+3b/2-3/2 = -0.687500
+c(0.873) numeric +0.000032   formula b^2/4+3b/2-3/2 = +0.000032
+c(1.0) numeric +0.250000   formula b^2/4+3b/2-3/2 = +0.250000
+c(1.5) numeric +1.312500   formula b^2/4+3b/2-3/2 = +1.312500
+threshold c=0: numeric b = 0.872983; sqrt(15)-3 = 0.872983
+P18: max of u at x=2: u = 1.135335 = 1+e^-2 = 1.135335;  u^2 = 1.2890
+F = x - m(x): F(1) = 0.5196;  zero at x = 3.294;  F(40) = -0.2500 (-c = -0.25)
+added outside r_c: int_1^inf (u^2-1) = 0.7696 (= c + 1 - m(1))
+b=0.0: centre u = (b+1)x - (b+1/2)x^2 + ...: rho/rho(0) ~ 1 + -1.000 x  (check at x=1e-4: 0.999900 vs 0.999900)
+b=1.0: centre u = (b+1)x - (b+1/2)x^2 + ...: rho/rho(0) ~ 1 + -1.500 x  (check at x=1e-4: 0.999850 vs 0.999850)
+isothermal sphere about the SIS: roots in ln(xi) = -0.5000+1.3229j, -0.5000-1.3229j  (-1/2 +- i sqrt7/2 = 1.3229)
+Emden first max 1.6609954234056454 at x 1.4405874762220054
+first min 0.8320780951165848 at 13.26724335183292

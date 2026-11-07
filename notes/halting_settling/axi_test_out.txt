@@ -1,0 +1,15 @@
+q=0.9              lat=20  |j| at 1st peri=0.153  max|j| (t<40)=0.182  t_first_peri=2.52
+q=0.9              lat=45  |j| at 1st peri=0.248  max|j| (t<40)=0.355  t_first_peri=2.53
+q=0.9              lat=70  |j| at 1st peri=0.171  max|j| (t<40)=0.597  t_first_peri=2.52
+q=0.8              lat=20  |j| at 1st peri=0.289  max|j| (t<40)=0.381  t_first_peri=2.55
+q=0.8              lat=45  |j| at 1st peri=0.482  max|j| (t<40)=0.968  t_first_peri=2.56
+q=0.8              lat=70  |j| at 1st peri=0.347  max|j| (t<40)=1.037  t_first_peri=2.53
+q=0.7              lat=20  |j| at 1st peri=0.398  max|j| (t<40)=0.744  t_first_peri=2.60
+q=0.7              lat=45  |j| at 1st peri=0.694  max|j| (t<40)=1.084  t_first_peri=2.60
+q=0.7              lat=70  |j| at 1st peri=0.522  max|j| (t<40)=1.463  t_first_peri=2.54
+q:1->0.7 over 10   lat=20  |j| at 1st peri=0.058  max|j| (t<40)=0.939  t_first_peri=2.51
+q:1->0.7 over 10   lat=45  |j| at 1st peri=0.094  max|j| (t<40)=0.884  t_first_peri=2.51
+q:1->0.7 over 10   lat=70  |j| at 1st peri=0.063  max|j| (t<40)=0.864  t_first_peri=2.51
+q:1->0.7 over 30   lat=20  |j| at 1st peri=0.020  max|j| (t<40)=0.680  t_first_peri=2.51
+q:1->0.7 over 30   lat=45  |j| at 1st peri=0.031  max|j| (t<40)=0.765  t_first_peri=2.51
+q:1->0.7 over 30   lat=70  |j| at 1st peri=0.021  max|j| (t<40)=0.905  t_first_peri=2.51

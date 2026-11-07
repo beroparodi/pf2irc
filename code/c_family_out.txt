@@ -1,0 +1,14 @@
+a       c (num)  c (formula)  C_E      y(z=2)  y(z=0.5)  z_end   v/rc if growth ends today
+0.8730  -0.0000   0.0000     -0.9896   223.8    121.0    none   37.6
+0.8987   0.0500   0.0500     -0.9776   174.0     97.6    none   31.1
+0.9243   0.1000   0.1000     -0.9643   130.5     77.0    0.08   25.4
+0.9497   0.1500   0.1500     -0.9499    94.4     59.5    0.22   20.5
+0.9749   0.2000   0.2000     -0.9342    66.5     45.3    0.41   16.4
+1.0000   0.2500   0.2500     -0.9174    46.6     34.4    0.64   13.1
+1.0249   0.3000   0.3000     -0.8993    33.2     26.4    0.94   10.6
+a = 0.975: max |v_c/v_c(P18) - 1| for x <= 15 at fixed v, r_c: 0.0125
+a = 1.025: max |v_c/v_c(P18) - 1| for x <= 15 at fixed v, r_c: 0.0125
+a = 0.975: first-order mass 2 int(u_a - 1) = -0.0500 (= 2(a-1)), second order int(u_a - 1)^2 = 0.2502, sum = c = 0.2002
+a = 1.0: first-order mass 2 int(u_a - 1) = -0.0000 (= 2(a-1)), second order int(u_a - 1)^2 = 0.2500, sum = c = 0.2500
+a = 1.025: first-order mass 2 int(u_a - 1) = +0.0500 (= 2(a-1)), second order int(u_a - 1)^2 = 0.2502, sum = c = 0.3002
+smallest c that reaches the observed median v/r_c by today: 0.071

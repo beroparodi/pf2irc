@@ -1,0 +1,4 @@
+f(E)*(E-Phi0) at E-Phi0=1.0e-05: 0.01047  (predicted 0.01047)
+f(E)*(E-Phi0) at E-Phi0=1.0e-04: 0.01047  (predicted 0.01047)
+f(E)*(E-Phi0) at E-Phi0=1.0e-03: 0.01046  (predicted 0.01047)
+f(E)*(E-Phi0) at E-Phi0=9.6e-03: 0.01038  (predicted 0.01047)

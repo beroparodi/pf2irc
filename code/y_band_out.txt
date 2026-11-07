@@ -1,0 +1,18 @@
+variant                             y(z=2) y(z=0.5) v/rc z=2 v/rc z=3  z_end
+paper: k=2/3, spin on top, n=2        46.6     34.4     81.6    129.5   0.64
+Lambda booked with k=1                44.9     30.2     78.6    127.2   0.74
+spin inside E=-v^2/2 (s=0)            83.2     46.3    145.6    250.7   0.40
+unrelaxed layer eps=+0.009            26.0     22.5     45.6     70.4   1.22
+unrelaxed layer eps=-0.009             nan    225.1      nan      nan   0.08
+profile n=1.76                        70.2     46.8    122.8    198.7   0.29
+profile n=1 (NFW-like cusp)          169.6     91.7    296.9    498.2    nan
+pseudo-isothermal sphere            2540.3   1235.2   4446.0   7583.0    nan
+lambda=0.025                          58.0     39.2    101.4    164.2   0.52
+lambda=0.050                          34.2     27.8     59.9     93.5   0.89
+envelope (k = 2/3 or 1, s = 0 or 1, eps in (0.0, 0.009), n = 2 or 1.76; 16 combinations): y(z=0.5) = 21-69, z_end = 0.11-1.26; v/r_c at z=2: 45-324 (0 without P18 solution), at z=3: 70-672
+envelope (k = 2/3 or 1, s = 0 or 1, eps in (-0.009, 0.0, 0.009), n = 2 or 1.76; 24 combinations): y(z=0.5) = 21-225, z_end = 0.00-1.26; v/r_c at z=2: 45-324 (8 without P18 solution), at z=3: 70-672
+nominal v/r_c at z = 2 and 3: 82, 129
+  y x 0.50: z_end = 1.43
+  y x 0.67: z_end = 1.06
+  y x 1.50: z_end = 0.29
+  y x 2.00: z_end = 0.07

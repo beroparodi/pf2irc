@@ -1,0 +1,13 @@
+isotropic: min f/f_SIS = 0.9220
+r_a =   0.3 r_c: min f/f_SIS = -1.771e+01;  negative at Q-Phi0 in [0.0178, 1] (R_circ 0.122-1.61 r_c)
+r_a =   0.5 r_c: min f/f_SIS = -4.299e+00;  negative at Q-Phi0 in [0.0667, 0.933] (R_circ 0.251-1.5 r_c)
+r_a =   0.7 r_c: min f/f_SIS = -1.075e+00;  negative at Q-Phi0 in [0.176, 0.812] (R_circ 0.443-1.32 r_c)
+r_a =   1.0 r_c: min f/f_SIS = +4.867e-01;  negative at none
+r_a =   1.5 r_c: min f/f_SIS = +9.511e-01;  negative at none
+r_a =   2.0 r_c: min f/f_SIS = +9.485e-01;  negative at none
+r_a =   3.0 r_c: min f/f_SIS = +9.442e-01;  negative at none
+r_a =   5.0 r_c: min f/f_SIS = +9.374e-01;  negative at none
+r_a =  10.0 r_c: min f/f_SIS = +9.284e-01;  negative at none
+positivity for energies up to the circular energy at 34 r_c: r_a >= 0.865 r_c (beta = 0.57 at r_c, 0.84 at 2 r_c, 0.97 at 5 r_c)
+positivity for energies up to the circular energy at 200 r_c: r_a >= 0.865 r_c (beta = 0.57 at r_c, 0.84 at 2 r_c, 0.97 at 5 r_c)
+positivity for energies up to the circular energy at 1e+06 r_c: r_a >= 0.865 r_c (beta = 0.57 at r_c, 0.84 at 2 r_c, 0.97 at 5 r_c)

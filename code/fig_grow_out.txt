@@ -1,0 +1,16 @@
+degeneracy: DDO154 growth ending at z=1.0 (r_c=1.20) plus eps rising linearly to 0.0079 gives r_c=1.89 today
+grown galaxies: DDO154 v=48.8 rc=1.89 v/rc=25.8 -> z_acc=0.545 (t=8.11 Gyr), reduced chi2 of IRC=0.41
+degeneracy: NGC2915 growth ending at z=2.0 (r_c=1.00) plus eps rising linearly to 0.0040 gives r_c=1.38 today
+grown galaxies: NGC2915 v=81.6 rc=1.38 v/rc=59.3 -> z_acc=1.480 (t=4.25 Gyr), reduced chi2 of IRC=0.25
+clock reading DDO154: v/r_c = 25.8 +- 1.9; median spin z = 0.55 (measurement error alone 0.48-0.61); spins 16-84 % with the error 0.35-1.01; choices of Table 1 0.12-1.12
+clock reading NGC2915: v/r_c = 59.3 +- 8.8; median spin z = 1.48 (measurement error alone 1.26-1.69); spins 16-84 % with the error 0.98-2.58; choices of Table 1 0.61-2.59
+clock reading: under each choice of Table 1, t_acc(DDO154)/t_acc(NGC2915) = 1.51-2.20
+clock: nominal law t_acc ~ (v/r_c)^-0.82 for 0 < z < 4; v/r_c for growth ending today 13.1 (choices of Table 1 8.4-21.1); dwarfs below the nominal value: 4
+clock: local slopes (Sect. 6.4): z=6: dln y/dln t -0.01, lag +0.00, dln t/dln(v/r_c) -0.99; z=3: dln y/dln t -0.07, lag +0.01, dln t/dln(v/r_c) -0.94; z=2: dln y/dln t -0.15, lag +0.02, dln t/dln(v/r_c) -0.89; z=1: dln y/dln t -0.35, lag +0.07, dln t/dln(v/r_c) -0.78; z=0.64: dln y/dln t -0.46, lag +0.11, dln t/dln(v/r_c) -0.74; z=0.3: dln y/dln t -0.55, lag +0.19, dln t/dln(v/r_c) -0.74; z=0.0: dln y/dln t -0.56, lag +0.32, dln t/dln(v/r_c) -0.80
+growth with Lambda (Sect. 5.1): z=2: r_c ~ t^1.13, rho(0) ~ t^-2.25, cosmic mean ~ t^-2.06; z=1: r_c ~ t^1.28, rho(0) ~ t^-2.56, cosmic mean ~ t^-2.17; z=0.5: r_c ~ t^1.36, rho(0) ~ t^-2.72, cosmic mean ~ t^-2.37
+clock floor at z = 2 (Sect. 9): nominal 82; spin at the 84th percentile 52; lowest choice of Table 1 45; both 36 km/s/kpc
+clock: 2^-0.8 = 0.57; NGC 2915 has 2.29 times the v/r_c of DDO 154 and stopped growing at 0.52 of its time (2.29^-0.82 = 0.51)
+clock: NGC1705 v/r_c = 300 reads z = 5.9
+clock: NGC4214 v/r_c = 279 reads z = 5.6
+clock: observed v/r_c of the 79 dwarfs 16/50/84 % = 18.3/28.7/61.6 km/s/kpc; nominal reading of the median: z_acc = 0.64 (t = 7.51 Gyr)
+clock: nominal v/r_c at z = 2 and 3: 82 and 129; band of Table 1 at z = 2: 45-324, at z = 3: 70-672

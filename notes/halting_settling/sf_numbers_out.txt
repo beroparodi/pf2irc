@@ -1,0 +1,9 @@
+rho_crit,0 = 9.204e-30 g/cm^3 (H0 = 70)
+z = 0.5: rho_m = 9.32e-30; inside front mean 1.37e-27, at front 4.57e-28 g/cm^3; gas (cosmic f_b = 0.16) n_H at front 3.3e-05, mean inside 1.0e-04 cm^-3
+z = 1.0: rho_m = 2.21e-29; inside front mean 3.25e-27, at front 1.08e-27 g/cm^3; gas (cosmic f_b = 0.16) n_H at front 7.9e-05, mean inside 2.4e-04 cm^-3
+z = 2.0: rho_m = 7.46e-29; inside front mean 1.10e-26, at front 3.65e-27 g/cm^3; gas (cosmic f_b = 0.16) n_H at front 2.7e-04, mean inside 8.0e-04 cm^-3
+SN energy per unit stellar mass = 5.03e+15 erg/g = (709 km/s)^2
+epsilon_fb = 2 f_c (710/v)^2 Delta M*/M = 280 f_c Delta M*/M at v = 60 km/s
+paper (robustness_results.txt): feedback per unit f_c median 0.65 (16-84%: 0.24-4.0); cooling -0.085 (-0.18 to -0.03); scalings with v: feedback ~ v^-2.5, cooling ~ v^-0.6
+moving a mass fraction 0.017 changes Phi at the front by at most ~0.017 v^2 per event (vs 1/2 v^2 to be turned)
+moving a mass fraction 0.16 changes Phi at the front by at most ~0.160 v^2 per event (vs 1/2 v^2 to be turned)

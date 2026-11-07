@@ -19,7 +19,7 @@
 density of our seed\\[2pt]
 \normalsize A companion note to \emph{From a primordial fluctuation to an idealised rotation curve}}
 \author{B. R. Parodi}
-\date{24 October 2026}
+\date{24 October 2026; extended 29 October 2026}
 
 \begin{document}
 \maketitle
@@ -41,7 +41,11 @@ the closed form, its linear limit and its values at turnaround
 ($1+\md=5.55$), halting (147) and collapse ($\infty$), verify the
 equivalence numerically in a flat $\Lambda$CDM background to better than
 $10^{-6}$, and state where the $\delta$ picture ends: at shell crossing,
-which in our model begins at the halting front.
+which in our model begins at the halting front. Figures of the nested top
+hats at one and at two moments show how a common energy, together with the
+halting rule, builds the flat curve behind the accretion front at
+$R_b=0.175\,vt$, and what the density profile of the seed looks like inside
+and outside the front.
 \end{abstract}
 
 \section{Why two pictures?}
@@ -408,6 +412,114 @@ profile $\md\propto M^{-2/3}$ at the earliest time.}
 \label{fig:tophat}
 \end{figure}
 
+\section{The nested top hats in pictures}\label{sec:pictures}
+
+Figures~\ref{fig:nested} and \ref{fig:nested2} (units $G=v=1$) show the
+seed of Sect.~\ref{sec:seed} in three ways and at two moments.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{nested_tophats.png}
+\caption{Nested top hats with one common energy $E=-v^2/2$ (units $G=v=1$; darker
+blue = larger mass). (a)~Radius of five shells, $M=0.2$ to 1, against time:
+each follows its cycloid, turns around (dot) and halts on the way back where it meets
+the accretion front (dashed line). (b)~The nested spheres at one moment,
+$t=4$, for $M=0.1$ to 2: inner spheres have halted inside the front (solid, grey
+disc), the middle ones are falling back (dashed), the outer ones are still expanding
+(dotted). (c)~The mean overdensity inside each shell of panel (a): the same
+curve for every $M$, Eq.~\eqref{eq:family}, shifted to later times in proportion to
+$M$; dots mark turnaround, squares halting. Script: \texttt{code/nested.py}.}
+\label{fig:nested}
+\end{figure}
+
+\paragraph{One history, stretched (Fig.~\ref{fig:nested}a).} Each curve has
+the same shape, stretched by $M$ in both radius and time. A shell expands
+with the Hubble flow, slows down under the pull of its own mass, turns
+around at $R_{\rm ta}=2GM/v^2$ and $t_{\rm ta}=\pi GM/v^3$ (dots), and falls
+back. A shell twice as heavy goes twice as far and takes twice as long. In
+the main paper a shell stops falling where the galaxy already built
+encloses its mass (its assumption A3). For a galaxy with the flat speed $v$
+this happens at about half the turnaround radius, $R\simeq GM/v^2$, i.e.\
+at the phase $\eta_b\simeq3\pi/2$, three quarters of the way along the
+cycloid. Since this halting phase is the same for every shell, the halting
+points lie on a straight line through the origin, the \emph{accretion
+front}
+\begin{equation*}
+  \Rb=\frac{v\,t}{1+3\pi/2}\simeq0.175\,vt .
+\end{equation*}
+Behind the front the halted mass grows in proportion to the radius,
+$M\propto\Rb$, so that the circular speed $v_c^2=GM/R$ is constant: a
+common energy, together with the halting rule, builds a flat rotation
+curve.
+
+\paragraph{The nested spheres at one moment (Fig.~\ref{fig:nested}b).} At a
+fixed time the shells are at different stages of the same history. The
+lightest ones started their collapse earliest and have already halted; they
+form the settled galaxy inside the front (grey). Somewhat heavier shells
+have turned around and are falling back towards the front. The heaviest ones
+are still expanding, though more slowly than the background. At a later
+time the whole picture is the same, only larger: this is the
+self-similarity of the growth (main paper, Sect.~5.1), in which every radius
+scales with $vt$.
+
+\paragraph{Why it is one top hat (Fig.~\ref{fig:nested}c).} The mean
+overdensity inside every shell follows the same curve,
+Eq.~\eqref{eq:family}. Early on it grows as the linear growing mode,
+$\md\propto t^{2/3}M^{-2/3}$: at a given time the inner (lighter) shells are
+denser, which is why they turn around first and why shells do not overtake
+each other before they halt. At turnaround every shell has $1+\md=5.55$, and
+when it halts $1+\md=147$ (Table~\ref{tab:milestones}). In the figure the
+curves for different masses are identical copies shifted along the time
+axis by the factor $M$ (the axis is logarithmic, so equal factors in $M$
+give equal shifts).
+
+\paragraph{Two moments, and the density profile (Fig.~\ref{fig:nested2}).}
+The same seed, now extended to $M=4$, at $t=4$ and $t=8$, with the density
+profile at each time. The density is computed from the shells themselves:
+at radius $R$ it is $\rho=(\partial M/\partial R)_t/4\pi R^2$, the mass per
+unit radius divided by the area of the sphere.
+\begin{itemize}
+\item \emph{Inside the front}, the halted matter has $M\propto R$, i.e.\ the
+  density of a singular isothermal sphere, $\rho=v^2/(4\pi GR^2)$. (In the
+  main paper this matter settles into the P18 profile, whose core of a few
+  per cent of $\Rb$ is omitted here.) Because $v$ is fixed, this part of the
+  profile is \emph{the same at both times}: the galaxy does not change where
+  it already exists, it only grows outwards as the front advances.
+\item \emph{At the front} the density drops by a factor $D\simeq6.7$ (main
+  paper, Sect.~5.1 and Appendix~B): just outside, the shells are falling back
+  and are spread out in radius, whereas just inside, the halted shells are
+  packed at their final radii.
+\item \emph{Outside the front}, the infalling shells (dashed) and, beyond the
+  current turnaround radius $R_{\rm ta}=2vt/\pi$, the still expanding ones
+  (dotted) have a density that falls slowly outwards towards that of the
+  background.
+\item \emph{Beyond the edge of the seed} (here the shell $M=4$) lies the
+  unperturbed background, $\bar\rho=1/(6\pi Gt^2)$ (grey).
+\end{itemize}
+From $t=4$ to $t=8$ the front and the turnaround radius move out by a factor
+of two, and the density outside the front drops by a factor of four
+($\propto t^{-2}$), in step with the background. In the variable $\xi=R/vt$
+the two outer profiles would lie exactly on top of each other: this is the
+self-similar function $P(\xi)$ of the main paper (Sect.~5.1, Fig.~2).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{nested_tophats_2.png}
+\caption{The seed of Fig.~\ref{fig:nested}, extended to $M=4$, at $t=4$ (top) and
+$t=8$ (bottom); units $G=v=1$. Left: the nested spheres, $M=0.25$ to 4
+(inner = lighter): halted inside the front (solid, grey disc), falling back (dashed),
+still expanding (dotted). Right: the density profile at the same time, with
+the same line styles: the halted matter as a singular isothermal sphere (core omitted),
+the jump by $\simeq6.7$ at the front, the infalling and expanding shells, and the
+background beyond the edge of the seed (grey). Vertical lines mark the front $\Rb$ and
+the current turnaround radius. Script: \texttt{code/nested2.py}.}
+\label{fig:nested2}
+\end{figure}
+
+Why the shells halt at the front at all, and what the halted matter must do
+to settle into the observed profile, are the subject of the companion note
+\emph{Halting and settling}.
+
 \section{Summary}
 
 \begin{itemize}
@@ -424,6 +536,11 @@ $\md\propto a$.
 shifted in time by $t_{\rm ta}\propto M$: the seed is a self-similar
 family of nested top hats, with $1+\md=5.55$ at turnaround and 147 at
 the halting front.
+\item With the halting rule, the nested top hats build a flat rotation curve
+behind the front $\Rb=0.175\,vt$; the density is that of a singular
+isothermal sphere inside the front, drops by a factor of 6.7 across it, and
+outside it falls with time in step with the background
+(Sect.~\ref{sec:pictures}).
 \item The density picture holds only until shells cross; in our model
 that is where the front halts them. Extensions of Eq.~\eqref{eq:delta}
 to clustering dark energy, shear or vorticity
@@ -444,7 +561,8 @@ $\Lambda$CDM does not have.
 \section{Code}
 The script \texttt{code/tophat.py} (numpy, scipy, matplotlib) performs the
 three checks of this note and draws Fig.~\ref{fig:tophat}; its output is
-in \texttt{code/tophat\_output.txt}.
+in \texttt{code/tophat\_output.txt}. The scripts \texttt{code/nested.py} and
+\texttt{code/nested2.py} draw Figs.~\ref{fig:nested} and \ref{fig:nested2}.
 \lstinputlisting{code/tophat.py}
 
 \end{document}

@@ -1,0 +1,8 @@
+spherical                              slope(0.1-0.5)=-1.90 slope(3-15)=-3.13 beta(<rc)=+0.88 peri_med=0.114 j/jc: 0.050->0.050 (ra<3: 0.050, ra>15: 0.050) dE med=-0.000 |dE| med=0.000
+triax 0.9/0.8 static, grow 20          slope(0.1-0.5)=-1.34 slope(3-15)=-3.10 beta(<rc)=+0.76 peri_med=0.121 j/jc: 0.050->0.071 (ra<3: 0.145, ra>15: 0.054) dE med=+0.002 |dE| med=0.002
+triax 0.8/0.6 static, grow 20          slope(0.1-0.5)=-0.91 slope(3-15)=-3.12 beta(<rc)=+0.67 peri_med=0.111 j/jc: 0.050->0.089 (ra<3: 0.209, ra>15: 0.051) dE med=+0.002 |dE| med=0.003
+triax 0.8/0.6 tumbling 0.3, grow 20    slope(0.1-0.5)=-1.49 slope(3-15)=-3.17 beta(<rc)=+0.76 peri_med=0.086 j/jc: 0.050->0.067 (ra<3: 0.114, ra>15: 0.050) dE med=+0.001 |dE| med=0.005
+triax 0.8/0.6 tumbling 0.1, grow 20    slope(0.1-0.5)=-1.32 slope(3-15)=-2.96 beta(<rc)=+0.71 peri_med=0.123 j/jc: 0.050->0.078 (ra<3: 0.180, ra>15: 0.051) dE med=+0.002 |dE| med=0.004
+triax 0.9/0.8 tumbling 0.3, grow 20    slope(0.1-0.5)=-1.71 slope(3-15)=-3.11 beta(<rc)=+0.82 peri_med=0.090 j/jc: 0.050->0.058 (ra<3: 0.079, ra>15: 0.051) dE med=+0.000 |dE| med=0.002
+
+[exited with code 0]

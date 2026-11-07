@@ -1,0 +1,31 @@
+Flat part (v_c = v): steady inflow  v_r = -A v, v_phi = B v;  pitch p: tan p = A/B;
+  inclination decays as tan(i/2) ~ exp(-q phi), q = kappa f/(2 B^2) per radian
+  kappa   f     B       A      pitch(deg)   q      | core pitch (deg)
+  0.10  0.00  0.9950  0.1000     5.74     0.0000  |   2.87
+  0.10  0.50  0.9975  0.0499     2.86     0.0251  |   1.43
+  0.20  0.00  0.9798  0.2000    11.54     0.0000  |   5.74
+  0.20  0.50  0.9901  0.0990     5.71     0.0510  |   2.86
+  0.30  0.50  0.9778  0.1466     8.53     0.0784  |   4.29
+  0.50  0.50  0.9397  0.2340    13.98     0.1416  |   7.12
+  0.50  0.80  0.9771  0.0906     5.30     0.2095  |   2.77
+  check f=0: sin p = kappa ->  p = asin(kappa): 5.74, 11.54
+
+Numerical trajectories (start r=60 r_c, inclination 40 deg, on the steady inflow v_r=-A v_c, v_t=B v_c):
+ kappa=0.2, f=0.5: predicted pitch flat 5.71, core 2.86 deg
+   measured mean pitch at r=20-30: 6.52, 8-12: 6.10, 3-5: 5.55, 1-2: 4.11, 0.2-0.5: 3.13
+   inclination: 40.0 deg at start, 18.29 at r=10, 4.819 at r=1; d ln tan(i/2)/d phi = -0.0500 (predicted -0.0510)
+ kappa=0.3, f=0.5: predicted pitch flat 8.53, core 4.29 deg
+   measured mean pitch at r=20-30: 9.21, 8-12: 9.14, 3-5: 8.35, 1-2: 6.16, 0.2-0.5: 4.70
+   inclination: 40.0 deg at start, 17.49 at r=10, 4.785 at r=1; d ln tan(i/2)/d phi = -0.0805 (predicted -0.0784)
+ kappa=0.2, f=0.0: predicted pitch flat 11.54, core 5.74 deg
+   measured mean pitch at r=20-30: 11.58, 8-12: 11.67, 3-5: 11.06, 1-2: 8.20, 0.2-0.5: 6.28
+   inclination: 40.0 deg at start, 40.00 at r=10, 40.000 at r=1; d ln tan(i/2)/d phi = 0.0000 (predicted -0.0000)
+
+Small-kappa formula for any rotation curve: tan p = kappa (1-f)/(1+beta_s), beta_s = dln v_c/dln R
+   x=  0.3: beta_s=+0.841;  kappa=0.2,f=0.5: p=3.11 deg
+   x=  1.0: beta_s=+0.541;  kappa=0.2,f=0.5: p=3.71 deg
+   x=  2.0: beta_s=+0.265;  kappa=0.2,f=0.5: p=4.52 deg
+   x=  3.0: beta_s=+0.116;  kappa=0.2,f=0.5: p=5.12 deg
+   x=  5.5: beta_s=-0.000;  kappa=0.2,f=0.5: p=5.71 deg
+   x= 10.0: beta_s=-0.012;  kappa=0.2,f=0.5: p=5.78 deg
+   x= 30.0: beta_s=-0.004;  kappa=0.2,f=0.5: p=5.73 deg

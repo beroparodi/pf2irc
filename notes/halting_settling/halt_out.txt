@@ -1,0 +1,3 @@
+seed spin: j = 0.0990 GM/v, E = -0.4988 v^2, pericentre 0.0358 R_b (= R_b/28), apocentre 2.0 R_b
+circular at R_b (f = 1): j = 1.0000 GM/v, E = -0.3750 v^2, pericentre 0.7288 R_b (= R_b/1), apocentre 2.0 R_b
+circular orbit at R_b: j = 1, E = 1/2 + Phi(1) = -0.5 = the seed energy; arrival at R_b with j = 0: |Rdot| = 1 = v

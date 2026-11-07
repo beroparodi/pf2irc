@@ -1,0 +1,37 @@
+radii in units of R_d; masses in v^2 R_d/G; reference = SIS run without disc ('none')
+reference: M_dm(<R)/R at R = 0.1, 0.3, 1, 3, 10: [0.876 0.993 0.995 0.985 0.941]; inner slope -2.04
+
+adiab: mode adiabatic, M_lo = 0.5, dM = 0.6, bursts = 0
+  inner slope (R = 0.05-0.2): -2.06
+  DM density / reference at R = 0.1, 0.3, 1, 2, 3, 5: [0.98 1.12 1.12 1.09 1.06 1.03]
+  displaced DM F: maximum +0.001 at R = 0.04; F(1) = -0.115; F(10) = -0.440
+  total: P18 fit v = 1.068, r_c = 0.051 R_d, rms(log V) = 0.0320
+  beta at R = 0.3, 1, 2, 3, 5: [ 0.04  0.01 -0.    0.01 -0.01]  (reference [ 0.01  0.    0.    0.01 -0.01])
+
+cyc03: mode cycles, M_lo = 0.5, dM = 0.3, bursts = 7
+  inner slope (R = 0.05-0.2): -1.90
+  DM density / reference at R = 0.1, 0.3, 1, 2, 3, 5: [1.07 1.12 1.12 1.09 1.06 1.02]
+  displaced DM F: maximum +0.000 at R = 0.10; F(1) = -0.107; F(10) = -0.436
+  total: P18 fit v = 1.067, r_c = 0.050 R_d, rms(log V) = 0.0314
+  beta at R = 0.3, 1, 2, 3, 5: [ 0.    0.01 -0.01  0.   -0.01]  (reference [ 0.01  0.    0.    0.01 -0.01])
+
+cyc06: mode cycles, M_lo = 0.5, dM = 0.6, bursts = 7
+  inner slope (R = 0.05-0.2): -1.81
+  DM density / reference at R = 0.1, 0.3, 1, 2, 3, 5: [1.09 1.09 1.08 1.08 1.05 1.01]
+  displaced DM F: maximum +0.003 at R = 0.08; F(1) = -0.097; F(10) = -0.368
+  total: P18 fit v = 1.062, r_c = 0.053 R_d, rms(log V) = 0.0286
+  beta at R = 0.3, 1, 2, 3, 5: [0.09 0.   0.03 0.01 0.02]  (reference [ 0.01  0.    0.    0.01 -0.01])
+
+big3: mode cycles, M_lo = 0.5, dM = 1.5, bursts = 3
+  inner slope (R = 0.05-0.2): -1.91
+  DM density / reference at R = 0.1, 0.3, 1, 2, 3, 5: [0.99 1.09 1.05 1.02 1.   0.98]
+  displaced DM F: maximum +0.025 at R = 7.99; F(1) = -0.065; F(10) = -0.018
+  total: P18 fit v = 1.048, r_c = 0.052 R_d, rms(log V) = 0.0290
+  beta at R = 0.3, 1, 2, 3, 5: [0.03 0.05 0.06 0.04 0.06]  (reference [ 0.01  0.    0.    0.01 -0.01])
+
+strong7: mode cycles, M_lo = 0.5, dM = 3.0, bursts = 7
+  inner slope (R = 0.05-0.2): -1.97
+  DM density / reference at R = 0.1, 0.3, 1, 2, 3, 5: [0.88 0.96 0.66 0.61 0.62 0.71]
+  displaced DM F: maximum +2.339 at R = 9.56; F(1) = +0.178; F(10) = +2.336
+  total: P18 fit v = 0.937, r_c = 0.039 R_d, rms(log V) = 0.0492
+  beta at R = 0.3, 1, 2, 3, 5: [0.06 0.17 0.2  0.25 0.18]  (reference [ 0.01  0.    0.    0.01 -0.01])

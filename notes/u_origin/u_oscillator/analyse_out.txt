@@ -1,0 +1,19 @@
+run       rho slope 0.002-0.006  0.006-0.02 | displaced mass F=M_base-M_run: max (xi) | zero (xi) | ratio zero/max | F at 0.1  | sign changes of mu/mu_base-1 (0.002-0.15)
+base      -2.46 -2.31
+fb05      -1.28 -2.06 | 4.20e-02 (0.1959) | nan |   nan | +3.14e-02 | 0
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +3.11e-03 +6.98e-03 +1.30e-02 +2.28e-02 +3.25e-02
+fb10      -0.77 -1.69 | 6.91e-02 (0.2220) | nan |   nan | +4.62e-02 | 0
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +7.10e-04 +4.97e-03 +1.25e-02 +2.91e-02 +4.93e-02
+fb20      -1.26 -2.15 | 8.60e-02 (0.2220) | nan |   nan | +5.63e-02 | 0
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: -4.98e-03 -4.27e-03 +5.65e-03 +2.20e-02 +4.56e-02
+fb05fast  -1.02 -2.12 | 5.06e-02 (0.1959) | nan |   nan | +4.73e-02 | 0
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +3.55e-03 +9.23e-03 +2.03e-02 +3.87e-02 +4.10e-02
+fb10far   -1.44 -1.54 | 7.25e-02 (0.2220) | nan |   nan | +4.93e-02 | 0
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +5.43e-04 +5.17e-03 +1.42e-02 +3.85e-02 +5.71e-02
+fb05ae02  -1.17 -2.40 | 3.48e-02 (0.2021) | nan |   nan | +2.71e-02 | 0
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +2.99e-03 +5.60e-03 +8.54e-03 +1.73e-02 +2.47e-02
+fb05ae01  -1.80 -2.28 | 2.04e-02 (0.2021) | nan |   nan | +1.50e-02 | 6
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +1.62e-03 +1.08e-03 +1.56e-03 +5.06e-03 +1.03e-02
+fb02ae01  -2.27 -2.22 | 5.77e-03 (0.0721) | 0.2850 |  3.95 | +5.23e-03 | 9
+          total matter (DM + time-averaged baryons): F at xi=0.003,0.01,0.03,0.1,0.2: +1.38e-03 +6.81e-04 -3.35e-04 +1.26e-03 +6.88e-04
+P18 reference: F = x-m peaks at x=1 (0.52), zero at 3.29 (ratio 3.29), F(inf) = -c = -0.25 (ratio to peak -0.48)

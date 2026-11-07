@@ -1,0 +1,99 @@
+galaxies: 79; R1 from {'data': 59, 'extrapolated': 20}
+Upsilon_disc = 0.5, Upsilon_bulge = 0.7, threshold 1.0 Msun/pc^2
+
+galaxy             v    r_c    R_d     R1  R1 from
+D512-2          38.1   1.18   1.24   3.58  data
+D564-8          27.2   1.48   0.61   1.22  data
+D631-7          64.0   3.30   0.70   2.28  data
+DDO064          63.1   1.93   0.69   2.32  data
+DDO154          48.8   1.89   0.37   1.33  data
+DDO161          66.7   4.00   1.22   4.20  data
+DDO168          62.9   2.08   1.02   2.95  data
+DDO170          60.9   3.26   1.95   4.88  data
+ESO444-G084     61.4   1.01   0.46   1.51  data
+F561-1          50.4   2.50   2.79  12.05  extrapolated
+F563-1         106.9   3.37   3.52   8.41  data
+F563-V1         29.5   2.30   3.79   9.11  extrapolated
+F563-V2        119.7   2.46   2.43   9.01  data
+F565-V2         92.3   4.69   2.17   4.73  data
+F567-2          50.4   2.33   3.08   9.57  data
+F574-2          52.3   8.85   3.76  12.24  extrapolated
+F583-1          87.8   4.14   2.36   6.00  data
+IC2574          82.4   7.90   2.78   6.62  data
+KK98-251        50.4   2.78   1.34   2.24  data
+NGC0055         89.4   4.09   6.11  15.25  extrapolated
+NGC1705         71.1   0.24   0.39   2.14  data
+NGC2366         55.2   1.95   0.65   2.46  data
+NGC2915         81.6   1.38   0.55   2.55  data
+NGC3109         78.8   3.90   1.56   3.33  data
+NGC3741         48.0   1.86   0.20   0.79  data
+NGC4068         87.3   4.13   0.59   2.39  extrapolated
+NGC4214         75.9   0.27   0.51   2.96  data
+NGC6789         96.5   0.89   0.31   1.40  extrapolated
+UGC00128       126.7   5.65   5.95  19.07  data
+UGC00191        79.9   1.60   1.58   6.57  data
+UGC00634       108.9   5.00   2.45   9.02  data
+UGC00731        71.0   2.35   2.30   3.81  data
+UGC00891        69.5   3.60   1.43   3.67  data
+UGC01230       105.9   2.98   4.34  15.04  data
+UGC01281        69.1   2.95   1.63   3.53  data
+UGC02023       131.9   7.61   1.55   5.46  extrapolated
+UGC02259        84.4   1.22   1.62   6.46  data
+UGC02455        85.3   4.34   0.99   5.03  extrapolated
+UGC04305        33.9   0.96   1.16   3.99  data
+UGC04325        92.0   1.24   1.86   5.49  data
+UGC04483        24.6   0.41   0.18   0.63  data
+UGC04499        73.8   2.30   1.73   6.77  data
+UGC05005        99.6   7.32   3.20  11.30  data
+UGC05414        67.6   2.20   1.47   6.22  extrapolated
+UGC05716        71.2   2.38   1.14   4.15  data
+UGC05750        84.3   6.36   3.46  10.36  data
+UGC05764        54.3   0.87   1.17   1.83  data
+UGC05829        74.5   3.94   1.99   4.88  data
+UGC05918        43.3   1.35   1.66   3.73  extrapolated
+UGC05986       116.5   2.31   1.67   6.79  extrapolated
+UGC05999       104.2   6.21   3.22  10.72  data
+UGC06399        90.0   2.79   2.05   7.94  extrapolated
+UGC06628        41.5   1.20   2.82  10.09  extrapolated
+UGC06818       102.2   6.01   1.39   5.71  data
+UGC06917       105.8   2.61   2.76  12.05  extrapolated
+UGC06923        83.8   1.86   1.44   6.56  extrapolated
+UGC07089        79.4   3.69   2.26   9.26  extrapolated
+UGC07125        63.5   3.58   3.38   9.58  data
+UGC07232        68.8   0.97   0.29   1.10  extrapolated
+UGC07261        72.1   1.13   1.20   4.58  data
+UGC07323        96.8   3.38   2.26   8.91  extrapolated
+UGC07399        97.1   1.13   1.64   5.41  data
+UGC07524        80.4   3.21   3.46  10.15  data
+UGC07559        37.1   1.44   0.58   1.81  data
+UGC07577        34.3   2.82   0.90   1.38  data
+UGC07608        77.8   2.70   1.50   3.26  data
+UGC07690        57.5   0.42   0.57   2.96  data
+UGC07866        32.5   0.89   0.61   2.09  data
+UGC08490        77.6   0.73   0.67   3.84  data
+UGC08837       125.4   9.50   1.72   3.86  data
+UGC09992        32.8   0.51   1.04   3.37  data
+UGC10310        72.7   1.94   1.80   7.08  extrapolated
+UGC11557        89.5   3.94   2.75  10.23  data
+UGC11820        75.6   2.85   2.08   5.19  data
+UGC12632        71.2   2.54   2.42   7.08  data
+UGC12732        86.4   3.12   1.98   7.07  data
+UGCA281         31.1   0.42   1.72   1.43  extrapolated
+UGCA442         58.0   1.99   1.18   2.38  data
+UGCA444         36.8   1.06   0.83   0.36  data
+
+all 79: N = 79
+  R1/r_c   median  1.85   scatter of log 0.329 dex
+  R_d/r_c  median  0.67   scatter of log 0.298 dex
+  R1/R_d   median  3.36   scatter of log 0.173 dex
+  r_c  against v: slope 1.02, scatter 0.297 dex
+  R_d  against v: slope 0.75, scatter 0.303 dex
+  R1   against v: slope 1.11, scatter 0.288 dex
+
+R1 from the data only: N = 59
+  R1/r_c   median  1.73   scatter of log 0.338 dex
+  R_d/r_c  median  0.59   scatter of log 0.274 dex
+  R1/R_d   median  3.24   scatter of log 0.172 dex
+  r_c  against v: slope 1.11, scatter 0.303 dex
+  R_d  against v: slope 1.22, scatter 0.254 dex
+  R1   against v: slope 1.47, scatter 0.235 dex

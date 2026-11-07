@@ -1,0 +1,70 @@
+== Sect. 2: the ODE and the regular family
+max |u''+2u'+u-1| = 4.2e-06;  u(0) = 0.0, u'(0) = 1.999997
+max |m' - u^2| = 2.8e-10
+b = 0.5: c(b) numerical -0.687500, formula b^2/4+3b/2-3/2 = -0.687500
+b = 1.0: c(b) numerical 0.250000, formula b^2/4+3b/2-3/2 = 0.250000
+b = 2.0: c(b) numerical 2.500000, formula b^2/4+3b/2-3/2 = 2.500000
+c(b) = 0 at b = 0.872983  (sqrt15 - 3 = 0.872983)
+P18 maximum: u(2) = 1.135335 = 1+e^-2, u^2 = 1.2890
+centre: (u - 2x + 1.5x^2)/x^3 at x = 1e-3: 0.666 (finite)
+displaced mass F = x - m: F(1) = 0.5196; zero at x = 3.294; F(40) = -0.2500
+added outside r_c: int_1^oo (u^2-1) = 0.7696
+
+== Sect. 2: the non-singular isothermal sphere with the same central density (x = xi/sqrt8)
+first maximum rho/rho_SIS = 1.661 at x = 1.44; first minimum 0.832 at x = 13.27
+linearised roots of d_ss + d_s + 2 d = 0: [-0.5+1.32287566j -0.5-1.32287566j]
+
+== Sect. 3: the disc representation
+max |mu' - numerical| = 4.0e-11;  max |mu'' - numerical| = 5.0e-11
+max |u - (1 - mu'')| = 0.0e+00;  max |u - (mu + 2mu')| = 2.2e-16
+b = 0.0: max |u_b - 1 - (-mu'' + (b-1) mu')| = 1.1e-16
+b = 0.5: max |u_b - 1 - (-mu'' + (b-1) mu')| = 1.2e-16
+b = 2.0: max |u_b - 1 - (-mu'' + (b-1) mu')| = 1.7e-16
+(D+1) e^-x = 0.0;  max |(D+1) mu' - e^-x| = 1.1e-16
+annulus mass mu' peaks at x = 1.0000; mu'' most negative at x = 2.0000; mu'''(2) = 0.0
+
+== Sect. 4: mass conservation at first order and the excess at second order
+b = 0.5: int (u_b - 1) = -0.500000 (b-1 = -0.5);  int (u_b-1)^2 = 0.312500 (b^2/4-b/2+1/2 = 0.312500)
+b = 1.0: int (u_b - 1) = -0.000000 (b-1 = +0.0);  int (u_b-1)^2 = 0.250000 (b^2/4-b/2+1/2 = 0.250000)
+b = 2.0: int (u_b - 1) = +1.000000 (b-1 = +1.0);  int (u_b-1)^2 = 0.500000 (b^2/4-b/2+1/2 = 0.500000)
+max |F - (2mu' - int_0^x mu''^2)| = 3.7e-15
+at x = 1: 2mu' = 0.7358, int_0^1 mu''^2 = 0.2162, F = 0.5196
+
+== Sect. 5: first-order reading
+xi/r_c = 2 x e^-x: maximum 0.736 at x = 1;  eps/v^2 = 2 e^-x: eps(0) = 2, eps(1) = 0.736
+total int eps dm_SIS = int_0^oo 2 e^-x dx = 2.000 v^2 (v^2 r_c/G)
+|u-1| at x = 0.5, 1, 1.5, 2, 3: [0.303 0.    0.112 0.135 0.1  ]
+median dwarf (v = 73 km/s, r_c = 2.4 kpc): v^2 r_c/G = 2.97e+09 Msun; 2 v^2 * that = 6.3e+56 erg
+
+== Sect. 6: Jeans equation with sigma_r^2 = v^2/2: beta = 1 - x u'/u - m/x
+  x =  0.01: beta = +0.007
+  x =   0.1: beta = +0.062
+  x =   0.3: beta = +0.129
+  x =   0.5: beta = +0.152
+  x =     1: beta = +0.152
+  x =   1.5: beta = +0.150
+  x =     2: beta = +0.157
+  x =   2.5: beta = +0.161
+  x =     3: beta = +0.155
+  x =     4: beta = +0.114
+  x =     6: beta = +0.022
+  x =    10: beta = -0.021
+  x =    20: beta = -0.012
+  x =    50: beta = -0.005
+max beta = 0.161 at x = 2.47; min beta = -0.021 at x = 10.27
+
+== Sect. 7: the disc in the STH collapse
+xi_b = 1/(1+3pi/2) = 0.1751; orbital period at r_c / t = 2 pi xi_b / y = 0.032 (y = 34)
+  lambda = 0.025: lambda y = 0.98; R_d/r_c (MMW, f_j=1) = 0.69; seed disc x1.06-1.4: 0.73-0.97;  v_rot/sigma(DM) <= (2 sqrt2 lambda v)/(v/sqrt2) = 4 lambda = 0.100
+  lambda = 0.035: lambda y = 1.19; R_d/r_c (MMW, f_j=1) = 0.84; seed disc x1.06-1.4: 0.89-1.18;  v_rot/sigma(DM) <= (2 sqrt2 lambda v)/(v/sqrt2) = 4 lambda = 0.140
+  lambda = 0.05: lambda y = 1.40; R_d/r_c (MMW, f_j=1) = 0.99; seed disc x1.06-1.4: 1.05-1.39;  v_rot/sigma(DM) <= (2 sqrt2 lambda v)/(v/sqrt2) = 4 lambda = 0.200
+cosmic baryon fraction Omega_b/Omega_m = 0.157
+all baryons inside the front: f_b y = 5.35; retained (1.7%): 0.017 y = 0.58; P18 deficit at r_c: 0.520
+thin exponential disc: V_max^2 = 0.3870 G M_d/R_d at R = 2.15 R_d; all baryons (R_d = r_c): V_max/v = 1.44; retained: 0.47
+lifting the expelled gas from r_c to the front: (5.35 - 0.58) x ln y = 16.8 v^2 (v^2 r_c/G), against 2 for the dark matter
+shielding: dark mass M_dm = r, disc M_d mu(r/R_d) -> ratio M_d mu(r)/r:
+  r/R_d = 0.01: M_d mu/M_dm = 0.0050 M_d   (small-r limit r/2 = 0.0050)
+  r/R_d = 0.1: M_d mu/M_dm = 0.0468 M_d   (small-r limit r/2 = 0.0500)
+  r/R_d = 0.3: M_d mu/M_dm = 0.1231 M_d   (small-r limit r/2 = 0.1500)
+  r/R_d = 1.0: M_d mu/M_dm = 0.2642 M_d   (small-r limit r/2 = 0.5000)
+  r/R_d = 3.0: M_d mu/M_dm = 0.2670 M_d   (small-r limit r/2 = 1.5000)

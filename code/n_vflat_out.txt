@@ -1,0 +1,32 @@
+Local density slope of P18, 2x u'/u - 2 (asymptotic slope 0 at x -> 0):
+  x = 0.1, 0.15, 0.2, 0.3, 0.5: -0.15, -0.22, -0.29, -0.43, -0.69
+  innermost point of the 79 curves: x_in median 0.26 (16-84%: 0.10-0.57); local slope there -0.38 (n = 2), -0.70 (n = 1.6)
+
+Free exponent n with v tied to an independent flat speed
+
+All 79 (paper, v free):
+  v, r_c, n free                         constrained 49; median n 1.59; core 25; cuspier >2sig 11; NFW reached  7 (n<=1: 4); above 2 by >2sig 1
+
+(a) V_flat of P18, v fixed: 54 galaxies
+  v_free / V_flat: median 0.997, 16-84% [0.951 1.062]
+  same galaxies, v free (paper)          constrained 34; median n 1.97; core 17; cuspier >2sig  6; NFW reached  5 (n<=1: 2); above 2 by >2sig 1
+  v tied to V_flat                       constrained 46; median n 2.15; core 19; cuspier >2sig 10; NFW reached  3 (n<=1: 1); above 2 by >2sig 4
+  galaxies constrained in both: 35; median change of n (tied - free): +0.04; n rises in 22 of 35
+
+(b) V_flat of SPARC, v fixed: 34 galaxies
+  v_free / V_flat: median 1.023, 16-84% [0.979 1.111]
+  same galaxies, v free (paper)          constrained 29; median n 1.64; core 14; cuspier >2sig  8; NFW reached  5 (n<=1: 2); above 2 by >2sig 0
+  v tied to V_flat                       constrained 33; median n 2.20; core  9; cuspier >2sig  7; NFW reached  1 (n<=1: 0); above 2 by >2sig 5
+  galaxies constrained in both: 29; median change of n (tied - free): +0.21; n rises in 21 of 29
+
+(c) V_flat of SPARC, v with prior: 34 galaxies
+  v_free / V_flat: median 1.023, 16-84% [0.979 1.111]
+  same galaxies, v free (paper)          constrained 29; median n 1.64; core 14; cuspier >2sig  8; NFW reached  5 (n<=1: 2); above 2 by >2sig 0
+  v tied to V_flat                       constrained 30; median n 2.06; core 11; cuspier >2sig  8; NFW reached  4 (n<=1: 1); above 2 by >2sig 3
+  galaxies constrained in both: 29; median change of n (tied - free): +0.07; n rises in 21 of 29
+
+One common n (r_c free per galaxy):
+  (a) P18 V_flat, 54 galaxies, v free: best common n = 1.92; chi2 there 248.9, at n = 2 250.4
+  (a) P18 V_flat, 54 galaxies, v tied: best common n = 1.90; chi2 there 359.6, at n = 2 365.0
+  (b) SPARC V_flat, 34 galaxies, v free: best common n = 1.75; chi2 there 194.2, at n = 2 208.9
+  (b) SPARC V_flat, 34 galaxies, v tied: best common n = 2.04; chi2 there 322.5, at n = 2 323.3

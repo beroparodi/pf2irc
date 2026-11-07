@@ -1,7 +1,7 @@
 """Figure and numbers for the companion note on splashback.
 Reads run_splash_<N>.pkl written by splashback_run.py (1D collisionless shells of the pf2irc seed,
 lambda = 0.035, units G = v = 1, outermost mass 1) and compares with the halted-galaxy model of pf2irc.
-python3 splashback_fig.py run_splash_1500.pkl"""
+python3 splashback_fig.py run_splash_3000.pkl"""
 import sys, pickle, numpy as np, matplotlib.pyplot as plt
 from scipy.optimize import brentq
 out = pickle.load(open(sys.argv[1], "rb"))

@@ -1,0 +1,5 @@
+seed035 vc2/v2(0.1Rb)=1.54 vc2/v2(0.3Rb)=1.19 vc2/v2(0.6Rb)=1.00 vc2/v2(1.0Rb)=0.86 | orbiting outside R_b 0.147 | M(<R_b)/M_h 0.865 | outer shell r at last snap 1.997
+seed07 vc2/v2(0.1Rb)=1.55 vc2/v2(0.3Rb)=1.22 vc2/v2(0.6Rb)=1.01 vc2/v2(1.0Rb)=0.86 | orbiting outside R_b 0.145 | M(<R_b)/M_h 0.864 | outer shell r at last snap 1.997
+f03 vc2/v2(0.1Rb)=1.43 vc2/v2(0.3Rb)=1.24 vc2/v2(0.6Rb)=1.01 vc2/v2(1.0Rb)=0.86 | orbiting outside R_b 0.139 | M(<R_b)/M_h 0.863 | outer shell r at last snap 1.997
+f06 vc2/v2(0.1Rb)=1.15 vc2/v2(0.3Rb)=1.18 vc2/v2(0.6Rb)=1.00 vc2/v2(1.0Rb)=0.86 | orbiting outside R_b 0.110 | M(<R_b)/M_h 0.858 | outer shell r at last snap 1.997
+f10 vc2/v2(0.1Rb)=0.81 vc2/v2(0.3Rb)=0.80 vc2/v2(0.6Rb)=0.87 vc2/v2(1.0Rb)=0.85 | orbiting outside R_b 0.059 | M(<R_b)/M_h 0.854 | outer shell r at last snap 1.997

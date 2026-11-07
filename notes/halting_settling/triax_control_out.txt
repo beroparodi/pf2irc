@@ -1,0 +1,4 @@
+isotropic control (spherical)      slope(0.1-0.5)=-0.39 beta(<rc)=+0.26
+triax 0.8/0.6 static, dt/2         slope(0.1-0.5)=-0.98 beta(<rc)=+0.66 j/jc(ra<3)=0.211
+triax 0.8/0.6 static, other seed   slope(0.1-0.5)=-0.95 beta(<rc)=+0.65 j/jc(ra<3)=0.195
+spherical, other seed              slope(0.1-0.5)=-1.89 beta(<rc)=+0.88

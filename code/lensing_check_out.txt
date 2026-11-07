@@ -1,0 +1,15 @@
+R/R_b   v_c/v (excess mass over the cosmic mean)   v_c/v (total)
+  1.0   0.997   1.000
+  1.5   0.843   0.852
+  2.0   0.758   0.776
+  3.0   0.671   0.715
+  4.0   0.628   0.709
+  5.0   0.603   0.731
+  6.0   0.589   0.769
+  8.0   0.572   0.874
+
+t0 = 13.47 Gyr, l0(t0) = 0.0199, lag factor 1 + c_L l0 = 1.192
+v =  60 km/s: R_b(today) =   121 kpc; 1 Mpc = 8.2 R_b; v_c(1 Mpc)/v = 0.57
+v =  75 km/s: R_b(today) =   152 kpc; 1 Mpc = 6.6 R_b; v_c(1 Mpc)/v = 0.58
+v = 100 km/s: R_b(today) =   202 kpc; 1 Mpc = 4.9 R_b; v_c(1 Mpc)/v = 0.60
+v = 150 km/s: R_b(today) =   303 kpc; 1 Mpc = 3.3 R_b; v_c(1 Mpc)/v = 0.65

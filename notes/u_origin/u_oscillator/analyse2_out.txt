@@ -1,0 +1,10 @@
+total mass /t within xi=1.2: base 0.3790
+fb05      peak F=4.205e-02 at xi=0.196; zero at xi=nan (zero/peak nan); F(1.2)/peak=+0.02; fit P18: xi_s=0.184 rms=0.145; fit arctan: rms=0.233
+fb10      peak F=6.909e-02 at xi=0.219; zero at xi=nan (zero/peak nan); F(1.2)/peak=+0.16; fit P18: xi_s=0.251 rms=0.127; fit arctan: rms=0.165
+fb20      peak F=8.612e-02 at xi=0.224; zero at xi=nan (zero/peak nan); F(1.2)/peak=+0.33; fit P18: xi_s=0.280 rms=0.135; fit arctan: rms=0.137
+fb05fast  peak F=5.067e-02 at xi=0.196; zero at xi=nan (zero/peak nan); F(1.2)/peak=+0.03; fit P18: xi_s=0.154 rms=0.164; fit arctan: rms=0.276
+fb10far   peak F=7.232e-02 at xi=0.219; zero at xi=nan (zero/peak nan); F(1.2)/peak=+0.14; fit P18: xi_s=0.246 rms=0.122; fit arctan: rms=0.171
+fb05ae02  peak F=3.487e-02 at xi=0.219; zero at xi=0.614 (zero/peak 2.80); F(1.2)/peak=+0.03; fit P18: xi_s=0.175 rms=0.161; fit arctan: rms=0.246
+fb05ae01  peak F=2.030e-02 at xi=0.201; zero at xi=0.480 (zero/peak 2.39); F(1.2)/peak=+0.01; fit P18: xi_s=0.143 rms=0.194; fit arctan: rms=0.282
+fb02ae01  peak F=5.835e-03 at xi=0.086; zero at xi=0.281 (zero/peak 3.27); F(1.2)/peak=+0.00; fit P18: xi_s=0.080 rms=0.264; fit arctan: rms=0.485
+P18 itself: zero/peak = 3.29, F(inf)/peak = -0.48

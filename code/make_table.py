@@ -1,4 +1,5 @@
-"""Writes tab_sparc.tex (Appendix A): per-galaxy P18 fits, free-n fits and end of growth."""
+"""Writes tab_sparc.tex (Table E.1): per-galaxy P18 fits, free-n fits and end of growth.
+Galaxies whose baryons supply more than half of V^2 at r_c (baryon_share_out.txt, from baryon_share.py) are marked with a dagger."""
 import csv, os, numpy as np
 from scipy.optimize import least_squares
 import recipe
@@ -9,6 +10,7 @@ vn = lambda x: np.sqrt(m(x)/x)
 B1 = list(csv.DictReader(open(os.path.join(SP, "parodi2018_B1.csv"))))
 B2 = list(csv.DictReader(open(os.path.join(SP, "parodi2018_B2.csv"))))
 FN = {r["name"]: r for r in csv.DictReader(open("fit_exponent_results.csv"))}
+SH = {l.split()[0]: float(l.split()[1]) for l in open("baryon_share_out.txt").readlines()[1:]}
 rows = []
 for b1, b2 in zip(B1, B2):
     name = b2["name"].replace("UGC0786", "UGC07866")
@@ -22,7 +24,7 @@ for b1, b2 in zip(B1, B2):
     fn = FN[name]; n, sn = float(fn["n"]), float(fn["sigma_n"])
     nstr = f"${n:.2f}\\pm{sn:.2f}$" if np.isfinite(sn) and sn < 1 and 0.51 < n < 3.99 else "--"
     z = recipe.z_end(v, rc)
-    rows.append((name.replace("_", "\\_"), len(R), f"${v:.1f}\\pm{ev:.1f}$", f"${rc:.2f}\\pm{erc:.2f}$",
+    rows.append((name.replace("_", "\\_")+("$^\\dagger$" if SH[name] > 0.5 else ""), len(R), f"${v:.1f}\\pm{ev:.1f}$", f"${rc:.2f}\\pm{erc:.2f}$",
                  f"{v/rc:.0f}", f"{chi:.2f}", f"{float(b1['Rd']):.2f}", nstr,
                  f"{z:.2f}" if z is not None else "--"))
 half = (len(rows)+1)//2

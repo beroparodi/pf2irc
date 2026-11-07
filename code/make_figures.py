@@ -1222,13 +1222,13 @@ ax[1].loglog(xs_out, _P_out(e_out), c=C2, lw=1.8, label="Phase I: local density,
 ax[1].loglog(xs_out, _P_mean(e_out), c=C2, lw=1.2, ls="--", label="Phase I: mean density inside $R$")
 ax[1].axhline(1/(6*np.pi), c="0.5", lw=0.8, ls=":", label=r"background $1/(6\pi)$")
 ax[1].plot([_xb0, _xb0], [_P_out(_etab), _P_in(_xb0)], c="k", lw=0.8)
-ax[1].axvline(2/np.pi, c="0.6", lw=0.7); ax[1].text(2/np.pi*1.12, 0.4, "turnaround", fontsize=7.5, color="0.4", rotation=90, va="bottom")
+ax[1].axvline(2/np.pi, ymax=0.5, c="0.6", lw=0.7); ax[1].text(2/np.pi*1.12, 0.4, "turnaround", fontsize=7.5, color="0.4", rotation=90, va="bottom")
 ax[1].text(_xb0*0.85, 1.2e0, "front", fontsize=7.5, color="0.2", ha="right")
 ax[1].set_xlabel(r"$\xi=R/vt$"); ax[1].set_ylabel(r"$P(\xi)=G\,t^2\rho$")
 ax[1].set_xlim(1e-3, 100); ax[1].set_ylim(1e-2, 1e5); ax[1].legend(frameon=False, fontsize=7.5, loc="upper right")
 fig.tight_layout(); fig.savefig("fig15_phase1_profile.png", dpi=DPI)
 # letter version (Fig. A.1 of the letter): labels without the long paper's phases and equation numbers
-for _t, _l in zip(ax[1].get_legend().get_texts(), ["inside the front: P18 profile", "outside: local density (A.8)",
+for _t, _l in zip(ax[1].get_legend().get_texts(), ["inside the front: P18 profile", "outside: local density of the shells",
                                                    "outside: mean density inside $R$", r"background $1/(6\pi)$"]):
     _t.set_text(_l)
 fig.savefig("fig_selfsim.png", dpi=DPI); plt.close(fig)
@@ -1292,7 +1292,7 @@ for lab, S in [("Defining sample ($T\\ge8$)", _IN),
                   np.mean([g["chi"] > 2 for g in S]), 10**np.median(hr), np.std(hr), np.median(q)))
     report(f"OOS {lab}: N={len(S)}, v_med={_rows[-1][2]:.0f}, rms={_rows[-1][3]:.3f}, err_med={_rows[-1][4]:.3f}, "
            f"frac chi2r>2={_rows[-1][5]:.2f}, held-out S_in/S_pred={_rows[-1][6]:.2f} rms {_rows[-1][7]:.3f} dex, v/r_c={_rows[-1][8]:.1f}")
-with open("tab_oos_aa.tex", "w") as fh:                  # rows of Table D.1
+with open("tab_oos_aa.tex", "w") as fh:                  # rows of the out-of-sample comparison (not in the paper)
     for r in _rows:
         fh.write(f"{r[0]} & {r[1]} & {r[2]:.0f} & {r[3]:.3f} & {r[4]:.3f} & {100*r[5]:.0f}\\% & {r[6]:.2f} & {r[7]:.2f} & {r[8]:.0f}\\\\\n")
 # matched velocity range: bulgeless late-type spirals vs the defining sample, 40 <= v <= 130 km/s, r_c to better than 50%
@@ -1341,40 +1341,11 @@ report(f"  feedback per unit f_c: eps_fb = {_pc(_ef).round(3)}; coupling for bal
        f"slopes vs v: |eps_diss| {np.polyfit(np.log10(_vv), np.log10(-_ed), 1)[0]:+.2f}, eps_fb/f_c {np.polyfit(np.log10(_vv), np.log10(_ef), 1)[0]:+.2f}")
 report(f"  core equation solvable for A<0 only if |A| <= e^(-1-4B)/4 = {_Alim:.2e}: net loss <= 3lam^2+{_Alim:.5f} = {3*LAMSPIN**2+_Alim:.4f}; y_max there = {1/(4*_Alim):.0f}")
 
-# ---- "growing" individual galaxies (Fig. 3): uses the functions of recipe.py (Appendix C)
-import recipe as _g
-def _core(v, lam, tg): return _g.grow(v, lam, z_of_t(tg))[0]   # tg in Gyr
-def _vc(v, rc, R): return _g.irc(np.maximum(R, 1e-9), v, rc)
-_fits = {r["name"]: r for r in csv.DictReader(open("sparc_data/sparc79_fits.csv"))}
-fig, ax = plt.subplots(1, 3, figsize=(7.1, 2.35))
-T0 = t_of_z(0); _tt = np.linspace(t_of_z(15), T0, 300)
-for k, (gname, col, zalt) in enumerate([("DDO154", C1, 1.0), ("NGC2915", C2, 2.0)]):
-    g = _fits[gname]; v_ = float(g["v"]); rc_ = float(g["rc"]); erc = float(g["erc"])
-    zacc = brentq(lambda z: _g.grow(v_, LAMSPIN, z)[0]-rc_, 0, 10); tacc = t_of_z(zacc)
-    d = np.loadtxt(f"sparc_data/rotmod/{gname}_rotmod.dat")
-    Rm = np.linspace(0, d[:, 0].max()*1.05, 300)
-    for zz in [6, 2, 1]:
-        if zz > zacc: ax[k].plot(Rm, _vc(v_, _core(v_, LAMSPIN, t_of_z(zz)), Rm), c="0.55", lw=0.8, ls="--")
-    ax[k].plot(Rm, _vc(v_, rc_, Rm), c=col, lw=1.8)
-    ax[k].errorbar(d[:, 0], d[:, 1], d[:, 2], fmt="o", ms=2.5, c="k", lw=0.7, elinewidth=0.7)
-    chi = np.mean(((d[:, 1]-_vc(v_, rc_, d[:, 0]))/np.maximum(d[:, 2], 1))**2)
-    ax[k].set_title(f"{gname[:3]} {gname[3:]}: growth ends at $z={zacc:.2f}$", fontsize=8.5)
-    ax[k].set_xlabel(r"$R$ [kpc]"); ax[k].set_ylim(0, None); ax[k].set_xlim(0, Rm[-1])
-    ax[k].text(0.97, 0.05, "dashed: $z=" + ", ".join(str(z) for z in [6, 2, 1] if z > zacc) + "$", transform=ax[k].transAxes, ha="right", fontsize=7.5, color="0.4")
-    tg = _tt[_tt <= tacc]; ax[2].plot(tg, [_core(v_, LAMSPIN, t) for t in tg], c=col, lw=1.8, label=f"{gname[:3]} {gname[3:]}")
-    ax[2].plot([tacc, T0], [rc_, rc_], c=col, lw=1.2, ls=":")
-    ax[2].axhspan(rc_-erc, rc_+erc, color=col, alpha=0.12, lw=0)
-    # degeneracy (Sect. 5): growth ending earlier, at zalt, plus feedback eps rising linearly in time
-    # to the value eps_f that gives today the same core (Eq. 9)
-    tb = t_of_z(zalt); ef = brentq(lambda e: _g.grow(v_, LAMSPIN, zalt, e)[1]-rc_, 0, 0.2)
-    _ta = np.linspace(tb, T0, 200)
-    ax[2].plot(_ta, [_g.grow(v_, LAMSPIN, zalt, ef*(t-tb)/(T0-tb))[1] for t in _ta], c=col, lw=1.2, ls="-.")
-    report(f"degeneracy: {gname} growth ending at z={zalt} (r_c={_g.grow(v_, LAMSPIN, zalt)[0]:.2f}) plus eps rising linearly to {ef:.4f} gives r_c={rc_:.2f} today")
-    report(f"grown galaxies: {gname} v={v_:.1f} rc={rc_:.2f} -> z_acc={zacc:.3f} (t={tacc:.2f} Gyr), chi2/N of IRC={chi:.2f}")
-ax[0].set_ylabel(r"$v_c$ [km s$^{-1}$]")
-ax[2].set_xlabel(r"cosmic time $t$ [Gyr]"); ax[2].set_ylabel(r"$r_c$ [kpc]"); ax[2].set_xlim(0, T0); ax[2].set_ylim(0, None)
-ax[2].legend(frameon=False, fontsize=7.5, loc="lower right"); ax[2].set_title(r"core growth, $\lambda=0.035$", fontsize=8.5)
-fig.tight_layout(); fig.savefig("fig18_grow.png", dpi=DPI); plt.close(fig)
+# ---- "growing" individual galaxies (Fig. 3) and the clock (Fig. 6): fig_grow.py, which uses recipe.py (Sect. 5.3)
+# and y_band.py (Table 1); its printed lines are copied into results.txt
+import runpy as _rp, io as _io, contextlib as _cl
+with _cl.redirect_stdout(_io.StringIO()): _rp.run_path("fig_grow.py", run_name="__main__")
+for _l in open("fig_grow_out.txt").read().splitlines(): report(_l)
 
 # ---- resolution and distance (referee point): does r_c depend on distance or on the innermost radius at fixed v?
 import re as _re
