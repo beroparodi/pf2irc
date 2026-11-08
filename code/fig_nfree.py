@@ -1,5 +1,5 @@
 """Observed against model rotation velocity for n = 2 (P18) and for the exponent
-n fitted per galaxy, with the residuals; companion to Fig. 3 of the letter.
+n fitted per galaxy, with the residuals: Fig. 7 of the paper (drawn for 0.6 of the text width).
 Run from code/ ; writes fig_nfree.png and prints the rms values."""
 import numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ for g in G:
         A=dict(x=g["R"]/rc2, y=g["V"]/v2, m=F.vc(g["R"], 1.0, rc2, 2.0)),
         B=dict(x=g["R"]/rc, y=g["V"]/v, m=F.vc(g["R"], 1.0, rc, n))))
 cm = plt.get_cmap("viridis"); lo, hi = 1.0, 3.0
-fig, ax = plt.subplots(2, 2, figsize=(7.2, 5.0), gridspec_kw=dict(height_ratios=[3, 1.3], hspace=0.32, wspace=0.08))
+fig, ax = plt.subplots(2, 2, figsize=(4.9, 3.45), gridspec_kw=dict(height_ratios=[3, 1.3], hspace=0.5, wspace=0.08))
 bins = np.logspace(-1.3, 1.4, 14)
 for j, (key, title) in enumerate([("A", r"$n=2$ (P18) for all galaxies"), ("B", r"$n$ fitted for each galaxy")]):
     X = np.concatenate([r[key]["x"] for r in rows]); D = np.concatenate([r[key]["y"]-r[key]["m"] for r in rows])
@@ -22,7 +22,7 @@ for j, (key, title) in enumerate([("A", r"$n=2$ (P18) for all galaxies"), ("B", 
         ax[1, j].plot(d["x"], d["y"]-d["m"], "o", c=col, ms=2.0, alpha=0.7, mec="none")
     ax[0, j].plot([0, 1.3], [0, 1.3], "k-", lw=1.0)
     rms = np.sqrt(np.mean(D**2))
-    ax[0, j].set_title(title, fontsize=9); ax[0, j].text(0.04, 1.2, f"rms = {rms:.3f}", fontsize=8.5)
+    ax[0, j].set_title(title, fontsize=8.5); ax[0, j].text(0.04, 1.17, f"rms = {rms:.3f}", fontsize=8)
     idx = np.digitize(X, bins)
     xb = [np.median(X[idx == i]) for i in range(1, len(bins)) if np.sum(idx == i) > 8]
     sb = [np.sqrt(np.mean(D[idx == i]**2)) for i in range(1, len(bins)) if np.sum(idx == i) > 8]
