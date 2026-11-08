@@ -73,7 +73,7 @@ ax[2].set_xlabel(r"cosmic time $t$ [Gyr]"); ax[2].set_ylabel(r"$r_c$ [kpc]"); ax
 ax[2].legend(frameon=False, fontsize=7, loc="lower right", handlelength=1.4, handletextpad=0.5); ax[2].set_title(r"core growth, $\lambda=0.035$", fontsize=8.5)
 
 # ---- panel 4: the clock, end of growth against the v/r_c seen today
-fig2, a4 = plt.subplots(figsize=(3.46, 2.9))                # Fig. 6: single column
+fig2, a4 = plt.subplots(figsize=(3.46, 2.7))                # Fig. 6: single column
 combos = [dict(k=k, s=s, eps=e, n=n) for k in (2/3, 1.0) for s in (0, 1) for e in (0.0, 0.009) for n in (2.0, 1.76)]
 zz = np.concatenate([np.linspace(-0.45, 1, 146), np.linspace(1.01, 25, 400)])   # z < 0: growth ending after today
 TT = np.array([t_of_z(z) for z in zz])
