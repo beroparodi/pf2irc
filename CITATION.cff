@@ -5,8 +5,8 @@ authors:
   - family-names: Parodi
     given-names: Bernhard R.
     affiliation: "GIBZ Gewerblich-industrielles Bildungszentrum Zug, Switzerland"
-version: 1.3.2
-date-released: 2026-11-07
+version: 1.3.3
+date-released: 2026-11-09
 license: MIT
 repository-code: "https://github.com/beroparodi/pf2irc"
 url: "https://beroparodi.github.io/pf2irc/"
