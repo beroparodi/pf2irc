@@ -29,6 +29,7 @@ Run the scripts from the `code/` folder with Python 3 (numpy, scipy, matplotlib)
 | `rar_check.py` | the radial acceleration relation and the MOND central surface density relation, the peak acceleration of P18 against *g*<sub>†</sub> (Sect. 6.6); output `rar_check_out.txt` |
 | `outer_resid.py` | stacked outer residuals of P18 and the pseudo-isothermal sphere (Sect. 2.2); output `outer_resid_out.txt` |
 | `baryon_share.py` | baryon share of *V*² at *r*<sub>c</sub> (daggers in Table E.1); output `baryon_share_out.txt` |
+| `compactness_check.py` | *v*/*r*<sub>c</sub> against the central surface brightness of the disc where dark matter dominates at *r*<sub>c</sub>, and for the dark matter alone after subtracting the baryons of the SPARC mass models (disc mass-to-light ratio 0.3–1.0) (Sect. 6.4); output `compactness_check_out.txt` |
 | `checks_sec6to8.py` | further numbers of Sects. 6–8 (epoch ranges, *n* = 1.76, pericentres, radial acceleration relation, core growth after *t*<sub>acc</sub>) |
 | `fit_exponent.py` | fits the generalised profile with *v*, *r*<sub>c</sub> and *n* free (Sect. 7, App. G); output `fit_exponent_out.txt`, `fit_exponent_results.csv` |
 | `n_vflat.py` | the free exponent *n* with *v* tied to an independent flat speed (P18 and SPARC), counts and best common *n* (Sect. 7, Table G.1); outputs `n_vflat_out.txt`, `n_vflat_results.csv` |

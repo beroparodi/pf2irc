@@ -1,0 +1,26 @@
+log(v/r_c) of the total-matter fit vs mu0 [3.6 um, face-on]:
+all 79                                         N=79  Pearson r=-0.60 (p=5.2e-09)  Spearman -0.54 (p=3.4e-07)  median v/rc HSB 34 (41) LSB 23 (38)
+dark matter dominates at r_c (share < 1/2)     N=70  Pearson r=-0.65 (p=1.2e-09)  Spearman -0.56 (p=6.0e-07)  median v/rc HSB 34 (34) LSB 24 (36)
+dark matter strongly dominates (share < 0.3)   N=50  Pearson r=-0.69 (p=2.9e-08)  Spearman -0.49 (p=2.7e-04)  median v/rc HSB 35 (23) LSB 22 (27)
+share < 0.2                                    N=25  Pearson r=-0.37 (p=6.5e-02)  Spearman -0.32 (p=1.2e-01)  median v/rc HSB 35 (11) LSB 27 (14)
+without NGC1705, NGC4214, UGC07690             N=76  Pearson r=-0.46 (p=3.6e-05)  Spearman -0.48 (p=1.2e-05)  median v/rc HSB 32 (38) LSB 23 (38)
+baryon share vs mu0: Pearson r=-0.29 (p=1.0e-02); median share HSB 0.25, LSB 0.23
+partial correlation log(v/r_c)-mu0 at fixed baryon share: r=-0.68 (p=8.0e-12); fit log(v/r_c) = 5.14 -0.172 mu0 -0.57 share
+
+v/r_c of the dark matter alone (baryons subtracted, gas x1, bulge 0.7, disc Y_d) vs mu0:
+  Y_d=0.3: N=77  Pearson r=-0.60 (p=8.7e-09)  Spearman -0.55 (p=2.1e-07)  median DM v/rc HSB 35 LSB 22; DM vs total log(v/rc) r=+0.98
+          and dark matter dominant at r_c: N=69 Pearson r=-0.62 (p=1.4e-08)
+  Y_d=0.5: N=74  Pearson r=-0.53 (p=1.3e-06)  Spearman -0.46 (p=4.4e-05)  median DM v/rc HSB 29 LSB 21; DM vs total log(v/rc) r=+0.93
+          and dark matter dominant at r_c: N=66 Pearson r=-0.57 (p=4.5e-07)
+  Y_d=0.7: N=72  Pearson r=-0.52 (p=3.4e-06)  Spearman -0.45 (p=8.4e-05)  median DM v/rc HSB 26 LSB 20; DM vs total log(v/rc) r=+0.93
+          and dark matter dominant at r_c: N=66 Pearson r=-0.52 (p=8.3e-06)
+  Y_d=1.0: N=67  Pearson r=-0.41 (p=5.1e-04)  Spearman -0.39 (p=1.1e-03)  median DM v/rc HSB 28 LSB 19; DM vs total log(v/rc) r=+0.87
+          and dark matter dominant at r_c: N=63 Pearson r=-0.42 (p=6.2e-04)
+
+share < 1/2, without the three extremes        N=68  Pearson r=-0.53 (p=3.1e-06)  Spearman -0.52 (p=7.0e-06)  median v/rc HSB 32 (32) LSB 24 (36)
+share < 0.3, without the three extremes        N=48  Pearson r=-0.50 (p=3.3e-04)  Spearman -0.43 (p=2.5e-03)  median v/rc HSB 32 (21) LSB 22 (27)
+mu0 spread all       : 16/50/84% = [19.28 20.21 21.35], std 1.19 mag
+mu0 spread share<0.5 : 16/50/84% = [19.35 20.36 21.37], std 1.14 mag
+mu0 spread share<0.3 : 16/50/84% = [19.48 20.41 21.38], std 1.06 mag
+mu0 spread share<0.2 : 16/50/84% = [19.69 20.38 21.42], std 0.85 mag
+shares of the extremes: NGC1705 0.25, NGC4214 0.25, UGC07690 0.67, NGC2915 0.34

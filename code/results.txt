@@ -207,3 +207,5 @@ ML with log D covariate: b=0.77+-0.22, c=0.21+-0.09
 RAR: outer g_bar/g_dag median 0.038; R_last/r_c median 3.33; Sigma_M = g_dag/(2 pi G) = 137.0 Msun/pc^2; RAR excess (M_b = v^4/G g_dag) / (v^2 r_c/4G): median 1.05 (16/84 0.63/2.40)
   free-c fits: observed curves median c -0.01, median error 4.3; RAR curves median c +0.10, median error 28.9
   Sigma(v) from LSQ line at v = 40, 73, 130 km/s: 93, 169, 297
+Compactness (Sect. 6.4; compactness_check.py): log(v/r_c) vs mu0[3.6, face-on] Pearson r = -0.60 (all 79), -0.65 (dark matter dominant at r_c, N=70), -0.69 (share < 0.3, N=50)
+  dark matter alone (SPARC mass models, baryons subtracted): r = -0.60, -0.53, -0.52, -0.41 for disc Y = 0.3, 0.5, 0.7, 1.0; baryon share HSB 0.25, LSB 0.23
